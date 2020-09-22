@@ -1,0 +1,25 @@
+.home {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.home__row {
+  display: flex;
+  z-index: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.home__image {
+  width: 100%;
+  /* mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0.8) 60%,
+    rgba(0, 0, 0, 0.6) 70%,
+    rgba(0, 0, 0, 0.4) 80%,
+    rgba(0, 0, 0, 0.2) 90%,
+    rgba(0, 0, 0, 0)
+  );
+  z-index: -1;
+  margin-bottom: -150px;
+}
