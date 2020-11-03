@@ -5,21 +5,92 @@
 .home__row {
   display: flex;
   z-index: 1;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 6px;
+  margin-right: 6px;
 }
 .home__image {
   width: 100%;
   /* mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
-  mask-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 1) 50%,
-    rgba(0, 0, 0, 0.8) 60%,
-    rgba(0, 0, 0, 0.6) 70%,
-    rgba(0, 0, 0, 0.4) 80%,
-    rgba(0, 0, 0, 0.2) 90%,
-    rgba(0, 0, 0, 0)
-  );
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.4) 80%, rgba(0, 0, 0, 0.2) 90%, rgba(0, 0, 0, 0));
   z-index: -1;
-  margin-bottom: -150px;
+  margin-bottom: -300px;
+}
+@media (min-width: 1400px) {
+  .orders__order {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1200px) {
+  .home__image {
+    margin-bottom: -100px;
+    mask-image: none;
+  }
+}
+@media (max-width: 1000px) {
+  .product {
+    width: 80% !important;
+    margin: 10px auto !important;
+  }
+  .home__row {
+    flex-wrap: wrap;
+  }
+  .home {
+    flex-wrap: wrap;
+  }
+  .header__logo {
+    width: 65px;
+  }
+  .header {
+    flex-wrap: wrap;
+    padding: 5px;
+  }
+  .header__searchInput {
+    width: auto;
+  }
+  .checkout {
+    flex-wrap: wrap;
+  }
+  .orders {
+    padding: 0px !important;
+  }
+  .order {
+    padding: 40px 20px !important;
+  }
+}
+@media (max-width: 680px) {
+  .headerNav + a {
+    margin-left: auto;
+  }
+  header a,
+  .header__search {
+    margin: 5px 0;
+  }
+  .checkoutProduct {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .payment__section {
+    flex-direction: column;
+    margin: 0 !important;
+  }
+  .payment__title {
+    margin-bottom: 20px;
+  }
+  .checkoutProduct__info {
+    margin-top: 30px;
+    padding-left: 5px !important;
+  }
+  .header__link:last-child {
+    margin-right: 0;
+  }
+  .toggle-off {
+    display: none;
+  }
+  .header__searchInput {
+    width: 125px;
+  }
+  .orders__order .order h2 {
+    margin-bottom: 20px;
+  }
 }

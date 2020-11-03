@@ -1,10 +1,10 @@
-import React from "react";
-import "./Product.css";
-import { useStateValue } from "./StateProvider";
+import React from "react"
+import "./Product.css"
+import { useStateValue } from "./StateProvider"
 
 function Product({ id, title, image, price, rating }) {
   //es6 destructuring
-  const [{ basket }, dispatch] = useStateValue();
+  const [{ basket }, dispatch] = useStateValue()
 
   const addToBasket = () => {
     //Add item to basket
@@ -15,10 +15,10 @@ function Product({ id, title, image, price, rating }) {
         title,
         image,
         price,
-        rating,
-      },
-    });
-  };
+        rating
+      }
+    })
+  }
   return (
     <div className="product">
       <div className="product__info">
@@ -42,7 +42,7 @@ function Product({ id, title, image, price, rating }) {
       <img src={image} alt="" />
       <button onClick={addToBasket}>Add to basket</button>
     </div>
-  );
+  )
 }
 
-export default Product;
+export default Product

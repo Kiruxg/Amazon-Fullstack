@@ -1,6 +1,9 @@
 .checkoutProduct {
   display: flex;
-  margin-top: 20px;
+  margin: 25px auto;
+  color: #0f1111;
+}
+.checkout__left h2 {
   margin-bottom: 20px;
 }
 .checkoutProduct__image {
@@ -14,6 +17,9 @@
 .checkoutProduct__title {
   font-size: 17px;
   font-weight: 800;
+}
+.checkoutProduct__price {
+  margin: 10px auto;
 }
 .checkoutProduct__info > button {
   background: #f0c14b;
